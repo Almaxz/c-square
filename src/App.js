@@ -4,21 +4,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ display: "flex", justifyContent: "center", minHeight: "20rem", fontSize: "1.5rem", textAlign: "left"}}>
+      <div style={{ display: "inline-block", backgroundColor: "blue", width: "20%"}}>
+        <h1 style={{ color: "white" }}>white on blue</h1>
+      </div>
+      <div style={{ display: "inline-block", backgroundColor: "red", width: "20%" }}>
+        <h1 style={{ color: "blue" }}>blue on red</h1>
+      </div>
+      <div style={{ display: "inline-block", backgroundColor: "pink", width: "20%" }}>
+        <h1 style={{ color: "green" }}>green on pink</h1>
+      </div>
     </div>
   );
 }
